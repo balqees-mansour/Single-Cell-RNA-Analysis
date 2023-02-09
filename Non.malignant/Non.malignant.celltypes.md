@@ -99,7 +99,8 @@ Step 2.Quality Control:
     ## Warning in cor(x = data[, 1], y = data[, 2]): the standard deviation is zero
 
     plot2 <- FeatureScatter(celltype.data, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
-    plot1 + plot2
+    plot1 
+    plot2
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
