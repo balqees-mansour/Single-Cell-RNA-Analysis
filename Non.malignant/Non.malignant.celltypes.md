@@ -3,31 +3,12 @@
 ### Library Load :
 
     library(dplyr)
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     library(Seurat)
 
     ## Attaching SeuratObject
 
     library(patchwork)
-    library(data.table)
-
-    ## 
-    ## Attaching package: 'data.table'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     between, first, last
+    library(data.table
 
 Step 1.Data Preparations and Subsetting:
 ----------------------------------------
@@ -58,9 +39,6 @@ Step 1.Data Preparations and Subsetting:
     # Initialize the Seurat object with the raw (non-normalized data).
     celltype.data <- CreateSeuratObject(counts =  t(nonmal.data), project = "NonMel3k", min.cells = 3, min.features = 10)
 
-    ## Warning: Feature names cannot have underscores ('_'), replacing with dashes
-    ## ('-')
-
     celltype.data
 
     ## An object of class Seurat 
@@ -76,7 +54,7 @@ Step 2.Quality Control:
     # Show QC metrics for the first 5 cells
     head(celltype.data@meta.data, 5)
 
-    ##                           orig.ident nCount_RNA nFeature_RNA percent.mt
+    ##                         orig.ident nCount_RNA nFeature_RNA percent.mt
     ## Cy72_CD45_H02_S758_comb     NonMel3k   7143.363         3365          0
     ## CY58_1_CD45_B02_S974_comb   NonMel3k   8915.833         3637          0
     ## Cy72_CD45_D09_S717_comb     NonMel3k   8079.284         2826          0
@@ -86,8 +64,6 @@ Step 2.Quality Control:
     # Visualize QC metrics as a violin plot
     VlnPlot(celltype.data, features = c("nFeature_RNA" , "nCount_RNA", "percent.mt"), ncol = 3)
 
-    ## Warning in SingleExIPlot(type = type, data = data[, x, drop = FALSE], idents =
-    ## idents, : All cells have the same value of percent.mt.
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
@@ -95,8 +71,6 @@ Step 2.Quality Control:
     # for anything calculated by the object, i.e. columns in object metadata, PC scores etc.
 
     plot1 <- FeatureScatter(celltype.data, feature1 = "nCount_RNA", feature2 = "percent.mt")
-
-    ## Warning in cor(x = data[, 1], y = data[, 2]): the standard deviation is zero
 
     plot2 <- FeatureScatter(celltype.data, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
     plot1 
@@ -131,8 +105,6 @@ necessary to perform a proper feature selection**
     # plot variable features with and without labels
     plot1 <- VariableFeaturePlot(celltype.data)
     plot2 <- LabelPoints(plot = plot1, points = top10, repel = TRUE)
-
-    ## When using repel, set xnudge and ynudge to 0 for optimal results
 
     plot2
 
@@ -415,14 +387,14 @@ Step 7. Finds Cell Markers :
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-17-1.png)
 
-**all markers variable contains the top 5 markers in each 6 cluster/
-cell type then,I extract cell type from these markers manually,from
-Human Cell Atlas data base** 1.Cluster 0: CD2 CD3D CD3E IL32 NKG7 (“T
-cells”) 2.cluster 1 : CD79A BANK1 CD19 IGLL5 (“B cells”) 3.Cluster 2:
-FCER1G CD14 TYROBO CST3 C1QB (Macrophages) 4.Cluster 3: DCN LUM COL3A1
-COL1A2 COL1A1 (CAF) 5.cluster 4: CLDN5 CCL21 EFEMP1 IGFBP7 TFPI
-("Endothelial cells) 6.cluster 5: AQP1 PLVAP RAMP3 SPARCL1 IGFBP7 (NK
-cells)
+**all markers variable contains the top 5 markers in each 6 cluster/cell type then,I extract cell type from these markers manually,from Human Cell Atlas data base** 
+
+1.Cluster 0: CD2 CD3D CD3E IL32 NKG7 (T cells) 
+2.cluster 1 : CD79A BANK1 CD19 IGLL5 (B cells) 
+3.Cluster 2:FCER1G CD14 TYROBO CST3 C1QB (Macrophages) 
+4.Cluster 3: DCN LUM COL3A1 COL1A2 COL1A1 (CAF) 
+5.cluster 4: CLDN5 CCL21 EFEMP1 IGFBP7 TFPI (Endothelial cells) 
+6.cluster 5: AQP1 PLVAP RAMP3 SPARCL1 IGFBP7 (NK cells)
 
     DimPlot(celltype.data, reduction = "tsne", label = TRUE, pt.size = 0.5) + NoLegend()
 
