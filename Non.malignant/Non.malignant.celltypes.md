@@ -1,4 +1,4 @@
-# scRNA Analysis on Non-malignant data 
+# scRNA Analysis on Melanoma Non-malignant data.
 
 ### Library Load :
 
@@ -8,7 +8,7 @@
     ## Attaching SeuratObject
 
     library(patchwork)
-    library(data.table
+    library(data.table)
 
 Step 1.Data Preparations and Subsetting:
 ----------------------------------------
