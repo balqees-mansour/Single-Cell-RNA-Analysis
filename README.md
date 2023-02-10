@@ -39,3 +39,9 @@ I ran t-SNE on the two sets of data with resolutions of 0.1 for the malignant su
 ### Step 8. Identification of Markers and Cell Clustering
 I used the Human Cell Atlas (https://www.humancellatlas.org/) to determine cell types based on their markers.
 
+### Nonmalignant cell types clusters 👍 Tcell 
+Cluster 0: CD2,  CD3D,  CD3E,  IL32,  NKG7
+
+
+
+
