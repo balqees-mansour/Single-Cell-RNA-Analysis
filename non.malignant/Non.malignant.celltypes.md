@@ -1,17 +1,8 @@
+# Non-malignant single cell RNA Analysis.
+
 ### Library Load :
 
     library(dplyr)
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
 
     library(Seurat)
 
@@ -19,13 +10,6 @@
 
     library(patchwork)
     library(data.table)
-
-    ## 
-    ## Attaching package: 'data.table'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     between, first, last
 
 Step 1.Data Preparations and Subsetting:
 ----------------------------------------
@@ -416,14 +400,14 @@ Step 7. Finds Cell Markers :
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-17-1.png)
 
-**all markers variable contains the top 5 markers in each 6 cluster/
-cell type then,I extract cell type from these markers manually,from
-Human Cell Atlas data base** 1.Cluster 0: CD2 CD3D CD3E IL32 NKG7 (“T
-cells”) 2.cluster 1 : CD79A BANK1 CD19 IGLL5 (“B cells”) 3.Cluster 2:
-FCER1G CD14 TYROBO CST3 C1QB (Macrophages) 4.Cluster 3: DCN LUM COL3A1
-COL1A2 COL1A1 (CAF) 5.cluster 4: CLDN5 CCL21 EFEMP1 IGFBP7 TFPI
-("Endothelial cells) 6.cluster 5: AQP1 PLVAP RAMP3 SPARCL1 IGFBP7 (NK
-cells)
+**all markers variable contains the top 5 markers in each 6 cluster/cell type then,I extract cell type from these markers manually,from Human Cell Atlas data base**
+
+1.Cluster 0: CD2 CD3D CD3E IL32 NKG7 (T cells) 
+2.cluster 1 : CD79A BANK1 CD19 IGLL5 (B cells) 
+3.Cluster 2: FCER1G CD14 TYROBO CST3 C1QB (Macrophages) 
+4.Cluster 3: DCN LUM COL3A1 COL1A2 COL1A1 (CAF)
+5.cluster 4: CLDN5 CCL21 EFEMP1 IGFBP7 TFPI (Endothelial cells) 
+6.cluster 5: AQP1 PLVAP RAMP3 SPARCL1 IGFBP7 (NK cells)
 
     DimPlot(celltype.data, reduction = "tsne", label = TRUE, pt.size = 0.5) + NoLegend()
 
