@@ -2,7 +2,12 @@
 
 I have replicated two data analyses based on the single cell RNA-seq data from the study "Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq" (https://www.science.org/doi/10.1126/science.aad0501). The study, published on April 8, 2016, aimed to explore the diverse genetic and physical properties of melanoma tumors using single-cell RNA sequencing (RNA-seq) on 4645 individual cells obtained from 17 patients. The sequencing analyzed malignant, immune, stromal, and endothelial cells and revealed transcriptional heterogeneity among the malignant cells within the same tumor, which was related to the cell cycle, local environment, and drug resistance.
 
-I began by downloading the single cell RNA-seq data "GSE72056" (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72056) with 4645 cells and 23689 genes, and preprocessing it. I then divided the data into two sets: one set of 1061 malignant cells and another set of 2716 non-malignant cells. The code for the malignant cells can be found at "https://github.com/balqees-mansour/Single-Cell-RNA-Analysis/blob/main/malignant_melanoma_tumors/Malignant.code.md" and the code for the non-malignant cells at "https://github.com/balqees-mansour/Single-Cell-RNA-Analysis/blob/main/non.malignant/Non.malignant.celltypes.md". My next step was to analyze the data using the Seurat package in R.
+I began by downloading the single cell RNA-seq data "GSE72056" (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72056) with 4645 cells and 23689 genes, and preprocessing it, I then divided the data into two sets: one set of 1061 malignant cells and another set of 2716 non-malignant cells, The code for the malignant cells can be found at:
+#### https://github.com/balqees-mansour/Single-Cell-RNA-Analysis/blob/main/malignant_melanoma_tumors/Malignant.code.md
+and the code for the non-malignant cells at :
+#### https://github.com/balqees-mansour/Single-Cell-RNA-Analysis/blob/main/non.malignant/Non.malignant.celltypes.md
+
+My next step was to analyze the data using the Seurat package in R.
 
 I selected malignant data from 6 tumors (78,79,88,80,81,89) with more than 50 cells, as specified in the paper. However, I did not include mel84 because it only had 14 cells, so I substituted it with mel78.
 Next, I selected non-malignant data from 13 tumors with more than 100 cells, according to the paper. This included Mel (53, 58, 80, 60, 72, 74, 75) instead of (78,79), 67 instead of 81, 84, 89, 94,88. I replaced mel81 and mel78 with others as they had a low cell count less than 100.
@@ -56,7 +61,7 @@ Cluster 5: 👍 NK  AQP1 PLVAP RAMP3 SPARCL1 IGFBP7.
 
 ### 1.importance of in-tercellular communication for tumor phenotype.
 
-the interactions between different cell types within a tumor play a crucial role in determining the overall behavior and characteristics of the tumor. This can involve the transfer of signals, growth factors, and other molecules between cells, which can affect the gene expression profiles and other properties of different cell types and contribute to the development and progression of the tumor. The importance of intercellular communication in tumor phenotype highlights the complexity of the tumor microenvironment and the need for a systems-level understanding of the underlying processes that shape tumor biology.
+The interactions between different cell types within a tumor play a crucial role in determining the overall behavior and characteristics of the tumor. This can involve the transfer of signals, growth factors, and other molecules between cells, which can affect the gene expression profiles and other properties of different cell types and contribute to the development and progression of the tumor. The importance of intercellular communication in tumor phenotype highlights the complexity of the tumor microenvironment and the need for a systems-level understanding of the underlying processes that shape tumor biology.
 
 ### 2.interactions between CAFs and immune cell profile
 
@@ -64,14 +69,15 @@ The abundance of immune cells in melanoma core biopsies is influenced by factors
 
 ### 3.a subset of genes expressed by one cell type (CAFs) may influence the proportion of other cell types (T cells).
 
-single-cell profiles from a few tumors to understand the composition of a large collection of bulk profiles from the Cancer Genome Atlas (TCGA). By analyzing the single-cell profiles, the researchers discovered various microenvironments that were associated with different malignant cell types. They also identified a subset of genes that were expressed by one specific cell type, such as cancer-associated fibroblasts (CAFs), that may have an impact on the proportion of other cell types in the tumors, such as T cells.
+Single-cell profiles from a few tumors to understand the composition of a large collection of bulk profiles from the Cancer Genome Atlas (TCGA). By analyzing the single-cell profiles, the researchers discovered various microenvironments that were associated with different malignant cell types. They also identified a subset of genes that were expressed by one specific cell type, such as cancer-associated fibroblasts (CAFs), that may have an impact on the proportion of other cell types in the tumors, such as T cells.
 
 ### 4.leveraging single-cell profiles for a few tumors to deconvolve a large collection of bulk
 
-the use of single-cell profiles to analyze a large set of bulk tissue samples from The Cancer Genome Atlas (TCGA). By breaking down bulk tissue into its individual cell components and analyzing the unique profiles of these individual cells, researchers can gain more detailed insights into the composition of the tissue and the types of cells that are present. This information can be used to better understand the underlying biology of cancer and to inform the development of new treatments.
+The use of single-cell profiles to analyze a large set of bulk tissue samples from The Cancer Genome Atlas (TCGA). By breaking down bulk tissue into its individual cell components and analyzing the unique profiles of these individual cells, researchers can gain more detailed insights into the composition of the tissue and the types of cells that are present. This information can be used to better understand the underlying biology of cancer and to inform the development of new treatments.
 
 ### 5.potential bio-markers for distinguishing exhausted and cyto-toxic T cells that may aid in selecting patients for immune checkpoint blockade
 
-the presence of certain markers that could differentiate between exhausted and cytotoxic T cells. These markers could then be used to determine which patients would be most suitable for treatment with immune checkpoint blockade therapy. In other words, by identifying these biomarkers, researchers and clinicians can potentially identify which patients are more likely to respond well to this type of treatment.
+The presence of certain markers that could differentiate between exhausted and cytotoxic T cells. These markers could then be used to determine which patients would be most suitable for treatment with immune checkpoint blockade therapy. In other words, by identifying these biomarkers, researchers and clinicians can potentially identify which patients are more likely to respond well to this type of treatment.
 
-### To be continued ( Cell-cell communications and Bulk RNA Analysis).
+## (Cell-cell communications and Bulk RNA Analysis).
+******To be continued ****** 
