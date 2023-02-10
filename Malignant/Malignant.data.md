@@ -2,31 +2,12 @@ load libraries
 --------------
 
     library(dplyr)
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     library(Seurat)
 
     ## Attaching SeuratObject
 
     library(patchwork)
     library(data.table)
-
-    ## 
-    ## Attaching package: 'data.table'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     between, first, last
 
 1. Data Preparations
 --------------------
@@ -71,9 +52,6 @@ load libraries
 
     # Initialize the Seurat object with the raw (non-normalized data).
     tumor.data <- CreateSeuratObject(counts =  t(mal.data), project = "Mel1k", min.cells = 3, min.features = 10)
-
-    ## Warning: Feature names cannot have underscores ('_'), replacing with dashes
-    ## ('-')
 
     tumor.data
 
