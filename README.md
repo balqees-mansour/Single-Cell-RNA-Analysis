@@ -1,7 +1,21 @@
 # Single-Cell-RNA-seq Analysis
-Reproduce two data analyses using the single cell RNA-seq data of the following study: https://www.science.org/doi/10.1126/science.aad0501
+I Reproduce two data analyses using the single cell RNA-seq data of the following study: https://www.science.org/doi/10.1126/science.aad0501
 
-# Cultering and manual cell type annotations (using Seurat).
-In order to investigate the diverse genetic and physical characteristics of melanoma tumors, we utilized single-cell RNA sequencing (RNA-seq) on 4645 individual cells taken from 17 patients. This sequencing analyzed malignant cells, immune cells, stromal cells, and endothelial cells and uncovered transcriptional diversity among the malignant cells within the same tumor, which was linked to factors such as the cell cycle, local environment, and resistance to drugs.
+## Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq (Reproducability)
+### Abstract :
+
+To explore the distinct genotypic and phenotypic states of melanoma tumors, we applied
+single-cell RNA sequencing (RNA-seq) to 4645 single cells isolated from 19 patients,
+profiling malignant, immune, stromal, and endothelial cells. Malignant cells within the
+same tumor displayed transcriptional heterogeneity associated with the cell cycle, spatial
+context, and a drug-resistance program. In particular, all tumors harbored malignant cells
+from two distinct transcriptional cell states, such that tumors characterized by high levels of
+the MITF transcription factor also contained cells with low MITF and elevated levels of the
+AXL kinase. Single-cell analyses suggested distinct tumor microenvironmental patterns,
+including cell-to-cell interactions. Analysis of tumor-infiltrating T cells revealed exhaustion
+programs, their connection to T cell activation and clonal expansion, and their variability
+across patients. Overall, we begin to unravel the cellular ecosystem of tumors and how single-
+cell genomics offers insights with implications for both targeted and immune therapies.
+ 
 
 
