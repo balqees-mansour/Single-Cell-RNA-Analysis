@@ -52,4 +52,4 @@ Cluster 4: 👍 Endothelial cells  CLDN5 CCL21 EFEMP1 IGFBP7 TFPI.
 
 Cluster 5: 👍 NK  AQP1 PLVAP RAMP3 SPARCL1 IGFBP7.
 
-### to be continued ( Cell-cell communications and Bulk RNA Analysis.
+### To be continued ( Cell-cell communications and Bulk RNA Analysis).
