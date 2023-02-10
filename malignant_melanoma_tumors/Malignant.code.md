@@ -3,17 +3,6 @@ load libraries
 
     library(dplyr)
 
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     library(Seurat)
 
     ## Attaching SeuratObject
@@ -23,10 +12,6 @@ load libraries
 
     ## 
     ## Attaching package: 'data.table'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     between, first, last
 
 1. Data Preparations
 --------------------
