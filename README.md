@@ -46,6 +46,8 @@ Cluster1 : 👍 B cells CD79A BANK1 CD19 IGLL5.
 
 Cluster 2: 👍 Macrophages FCER1G CD14 TYROBO  CST3  C1QB. 
 
+Cluster 3: 👍 CAF DCN LUM COL3A1 COL1A2 COL1A1 
+
 Cluster 4: 👍 Endothelial cells  CLDN5 CCL21 EFEMP1 IGFBP7 TFPI.
 
 Cluster 5: 👍 NK  AQP1 PLVAP RAMP3 SPARCL1 IGFBP7.
