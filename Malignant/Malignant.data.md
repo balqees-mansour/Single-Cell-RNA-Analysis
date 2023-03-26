@@ -91,7 +91,8 @@ Visualize QC metrics as a violin plot
     ## idents, : All cells have the same value of percent.mt.
 
 ![](Malignant.data_files/figure-markdown_strict/unnamed-chunk-5-1.png)
-\#\# FeatureScatter to visualize feature-feature relationships
+
+ ### FeatureScatter to visualize feature-feature relationships
 
     plot1 <- FeatureScatter(tumor.data, feature1 = "nCount_RNA", feature2 = "percent.mt")
 
