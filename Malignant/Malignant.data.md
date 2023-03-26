@@ -462,3 +462,6 @@ step 7. Finds the marker genes
     pl1 + pl2
 
 ![](Malignant.data_files/figure-markdown_strict/unnamed-chunk-24-1.png)
+## the final finding is : 
+
+### Following the clustering process using PCA, TSNE, and UMAP, you will observe six distinct clusters on either UMAP or TSNE. Each cluster represents a different melanoma cell line, and each cell line has unique genetic and molecular characteristics that determine its placement in one of the six clusters. Furthermore, cells within each cluster tend to exhibit similar RNA expression profiles due to shared genetic features.
