@@ -112,8 +112,7 @@ Step 2. Normalization:
 
 **A normalization step, aiming to make gene expression levels between
 different cells comparable, is therefore necessary.**
-
-    tumor.data <- NormalizeData(tumor.data, normalization.method = "LogNormalize", scale.factor = 10000)
+ ***The Data from GSE72056 was already normalized***
 
 Step 3. Feature selection for following heterogeneity analysis
 --------------------------------------------------------------
