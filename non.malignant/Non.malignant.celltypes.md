@@ -96,7 +96,7 @@ Step 2.Quality Control:
 Step 3. Normalizations and Log Transformation:
 ----------------------------------------------
 
-    celltype.data <- NormalizeData(celltype.data, normalization.method = "LogNormalize", scale.factor = 10000)
+***DATA IS ALREADY NORMALIZED***
 
 Feature selection for following heterogeneity analysis:
 -------------------------------------------------------
