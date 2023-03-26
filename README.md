@@ -9,7 +9,7 @@ and the code for the non-malignant cells at :
 
 My next step was to analyze the data using the Seurat package in R.
 
-I selected malignant data from 6 tumors (78,79,88,80,81,89) with more than 50 cells, as specified in the paper. However, I did not include mel84 because it only had 14 cells, so I substituted it with mel78.
+I selected malignant data from 6 tumors (78,79,88,80,81,89) with more than 50 cells, as specified in the paper. However, I did not include mel84 because it only had 14 cells, so I substituted it with mel89.
 Next, I selected non-malignant data from 13 tumors with more than 100 cells, according to the paper. This included Mel (67, 75,79 ,88, 80, 89, 84,94 ,53 ,58, 60, 72, 74). I replaced mel81 and mel78 with others as they had a low cell count less than 100.
  
 ## My analysis was performed using Seurat:
