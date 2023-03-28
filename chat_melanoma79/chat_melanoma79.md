@@ -268,13 +268,6 @@
 
 ![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-24-1.png)
 
-    #Comparing communications on a single object
-    # show all the significant interactions (L-R pairs) associated with certain signaling pathways
-    netVisual_bubble(cellchat, sources.use = 4, targets.use = c(5:11), signaling = c("WNT"), remove.isolate = FALSE,font.size = 6)
-
-    ## Comparing communications on a single object
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-24-2.png)
 
     # show all the significant interactions (L-R pairs) based on user's input (defined by `pairLR.use`)
     #pairLR.use <- extractEnrichedLR(cellchat, signaling = c("WNT"))
