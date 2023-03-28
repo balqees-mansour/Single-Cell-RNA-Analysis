@@ -207,10 +207,6 @@
 
 ![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
-    par(mfrow=c(1,1))
-    netVisual_aggregate(cellchat, signaling = pathways.show, layout = "circle")
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-16-1.png)
 
 ### Chord diagram
 
@@ -219,7 +215,7 @@
     netVisual_aggregate(cellchat, signaling = pathways.show, layout = "chord")
 
 ![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-17-1.png)
-\### Heatmap
+### Heatmap
 
     # Heatmap
     par(mfrow=c(1,1))
@@ -250,35 +246,6 @@
 
 ![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-20-2.png)
 
-    ## [[1]]
-
-## WNT pathway
-
-    netAnalysis_contribution(cellchat, signaling = pathways.show)
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-21-1.png)
-
-    pairLR.CXCL <- extractEnrichedLR(cellchat, signaling = pathways.show, geneLR.return = FALSE)
-    LR.show <- pairLR.CXCL[1,] # show one ligand-receptor pair
-    # Hierarchy plot
-    vertex.receiver = seq(1,4) # a numeric vector
-    netVisual_individual(cellchat, signaling = pathways.show,  pairLR.use = LR.show, vertex.receiver = vertex.receiver)
-
-    ## [[1]]
-
-    # Circle plot
-    netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = LR.show, layout = "circle")
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-21-2.png)
-
-    ## [[1]]
-
-    # Chord diagram
-    netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = LR.show, layout = "chord")
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-21-3.png)
-
-    ## [[1]]
 
 
 ## TGFb pathway
