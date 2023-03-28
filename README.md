@@ -100,5 +100,9 @@ The use of single-cell profiles to analyze a large set of bulk tissue samples fr
 
 The presence of certain markers that could differentiate between exhausted and cytotoxic T cells. These markers could then be used to determine which patients would be most suitable for treatment with immune checkpoint blockade therapy. In other words, by identifying these biomarkers, researchers and clinicians can potentially identify which patients are more likely to respond well to this type of treatment.
 
-## (Cell-cell communications and Bulk RNA Analysis).
-******To be continued ****** 
+## (Cell-cell communications).
+CellChat provides a range of features that facilitate thorough data exploration, analysis, and visualization.
+
+here👍 https://github.com/balqees-mansour/Single-Cell-RNA-Analysis/tree/main/chat_melanoma79
+
+
