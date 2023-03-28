@@ -81,6 +81,9 @@ The abundance of immune cells in melanoma core biopsies is influenced by factors
 
 ![image](https://user-images.githubusercontent.com/87857777/228239789-3000478d-1be3-479d-97da-98c13b2dee1c.png)
 
+### My reproducing.
+In the tumor microenvironment, Mel79 has been found to interact with both cancer-associated fibroblasts (CAFs) and endothelial cells, which are responsible for lining the blood vessels. These interactions can lead to the induction of angiogenesis and the promotion of the metastasis process.
+
 
 ### 3.a subset of genes expressed by one cell type (CAFs) may influence the proportion of other cell types (T cells).
 
