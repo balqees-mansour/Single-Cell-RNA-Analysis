@@ -188,7 +188,7 @@
     netVisual_circle(cellchat@net$weight, vertex.weight = groupSize, weight.scale = T, label.edge= F, title.name = "Interaction weights/strength")
 
 ![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-13-1.png)
-\### examine the signaling sent from each cell group.
+### examine the signaling sent from each cell group.
 
     mat <- cellchat@net$weight
     par(mfrow = c(3,4), xpd=TRUE)
