@@ -89,6 +89,9 @@ In the tumor microenvironment, Mel79 has been found to interact with both cancer
 
 Single-cell profiles from a few tumors to understand the composition of a large collection of bulk profiles from the Cancer Genome Atlas (TCGA). By analyzing the single-cell profiles, the researchers discovered various microenvironments that were associated with different malignant cell types. They also identified a subset of genes that were expressed by one specific cell type, such as cancer-associated fibroblasts (CAFs), that may have an impact on the proportion of other cell types in the tumors, such as T cells.
 
+![image](https://user-images.githubusercontent.com/87857777/228243435-434fad6f-842c-4eec-9859-207091f6a21e.png)
+
+
 ### 4.leveraging single-cell profiles for a few tumors to deconvolve a large collection of bulk
 
 The use of single-cell profiles to analyze a large set of bulk tissue samples from The Cancer Genome Atlas (TCGA). By breaking down bulk tissue into its individual cell components and analyzing the unique profiles of these individual cells, researchers can gain more detailed insights into the composition of the tissue and the types of cells that are present. This information can be used to better understand the underlying biology of cancer and to inform the development of new treatments.
