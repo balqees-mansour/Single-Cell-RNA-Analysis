@@ -79,6 +79,9 @@ As depicted in the above figure, there are several interactions observed among d
 
 The abundance of immune cells in melanoma core biopsies is influenced by factors derived from the tumor stroma. This implies that, instead of considering the overall expression level of genes in the bulk tissue sample, the composition of different cell types within the tumor should be taken into account when developing diagnostic and therapeutic strategies for melanoma. The authors are suggesting that a more nuanced understanding of the cellular interactions within the tumor will lead to more effective treatments.
 
+![image](https://user-images.githubusercontent.com/87857777/228239789-3000478d-1be3-479d-97da-98c13b2dee1c.png)
+
+
 ### 3.a subset of genes expressed by one cell type (CAFs) may influence the proportion of other cell types (T cells).
 
 Single-cell profiles from a few tumors to understand the composition of a large collection of bulk profiles from the Cancer Genome Atlas (TCGA). By analyzing the single-cell profiles, the researchers discovered various microenvironments that were associated with different malignant cell types. They also identified a subset of genes that were expressed by one specific cell type, such as cancer-associated fibroblasts (CAFs), that may have an impact on the proportion of other cell types in the tumors, such as T cells.
