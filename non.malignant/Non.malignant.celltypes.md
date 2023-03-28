@@ -391,7 +391,8 @@ Step 7. Finds Cell Markers :
     DoHeatmap(celltype.data, features = top10$gene) + NoLegend()
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-16-1.png)
-\#\# Annotate cell clusters
+
+## Annotate cell clusters
 
     new.cluster.ids <- c("T cells", "b cells", "Macrophages", "CAF cells", "Endothelial cells", " NK cells")
     names(new.cluster.ids) <- levels(celltype.data)
@@ -403,10 +404,15 @@ Step 7. Finds Cell Markers :
 **all markers variable contains the top 5 markers in each 6 cluster/cell type then,I extract cell type from these markers manually,from Human Cell Atlas data base**
 
 1.Cluster 0: CD2 CD3D CD3E IL32 NKG7 (T cells) 
+
 2.cluster 1 : CD79A BANK1 CD19 IGLL5 (B cells) 
-3.Cluster 2: FCER1G CD14 TYROBO CST3 C1QB (Macrophages) 
+
+3.Cluster 2: FCER1G CD14 TYROBO CST3 C1QB (Macrophages)
+
 4.Cluster 3: DCN LUM COL3A1 COL1A2 COL1A1 (CAF)
+
 5.cluster 4: CLDN5 CCL21 EFEMP1 IGFBP7 TFPI (Endothelial cells) 
+
 6.cluster 5: AQP1 PLVAP RAMP3 SPARCL1 IGFBP7 (NK cells)
 
     DimPlot(celltype.data, reduction = "tsne", label = TRUE, pt.size = 0.5) + NoLegend()
