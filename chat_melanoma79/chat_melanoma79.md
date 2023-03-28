@@ -280,33 +280,6 @@
 
     ## [[1]]
 
-## NOTCH pathway
-
-    netAnalysis_contribution(cellchat, signaling = pathways.show)
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-22-1.png)
-
-    pairLR.CXCL <- extractEnrichedLR(cellchat, signaling = pathways.show, geneLR.return = FALSE)
-    LR.show <- pairLR.CXCL[1,] # show one ligand-receptor pair
-    # Hierarchy plot
-    vertex.receiver = seq(1,4) # a numeric vector
-    netVisual_individual(cellchat, signaling = pathways.show,  pairLR.use = LR.show, vertex.receiver = vertex.receiver)
-
-    ## [[1]]
-
-    # Circle plot
-    netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = LR.show, layout = "circle")
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-22-2.png)
-
-    ## [[1]]
-
-    # Chord diagram
-    netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = LR.show, layout = "chord")
-
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-22-3.png)
-
-    ## [[1]]
 
 ## TGFb pathway
 
@@ -508,4 +481,4 @@
 
     netVisual_embeddingZoomIn(cellchat, type = "structural", nCol = 2)
 
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-37-2.png)
+
