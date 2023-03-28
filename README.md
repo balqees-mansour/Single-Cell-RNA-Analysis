@@ -73,7 +73,7 @@ The interactions between different cell types within a tumor play a crucial role
 ![image](https://user-images.githubusercontent.com/87857777/228236496-4f704057-2291-4b56-a02b-9c1eca2e2a9d.png)
 
 ### My reproducing.
-As depicted in the above figure, there are several interactions observed among different cells within the tumor microenvironment. For instance, Mel79 shows a significant interaction with B cells, T cells, and itself. Additionally, it is noteworthy that there is a high weight of interactions observed between CAF cells and Mel70, B cells, and T cells.
+As depicted in the above figure, there are several interactions observed among different cells within the tumor microenvironment. For instance, Mel79 shows a significant interaction with B cells, T cells, and itself. Additionally, it is noteworthy that there is a high weight of interactions observed between CAF cells and Mel79, B cells, and T cells.
 
 ### 2.interactions between CAFs and immune cell profile
 
