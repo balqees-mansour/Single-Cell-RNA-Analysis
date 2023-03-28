@@ -44,7 +44,8 @@ The benefits of dimension reduction include:
 Data becomes more compact, resulting in faster computation.
 In scRNA-seq data, which is inherently sparse, summarizing measurements of related features significantly improves signal robustness.
 I used 15 PCs, as specified in the paper.
-Step 7. Non-linear Dimension Reduction for Visualization
+
+### Step 7. Non-linear Dimension Reduction for Visualization
 I ran t-SNE on the two sets of data with resolutions of 0.1 for the malignant subset and 0.03 for the non-malignant subset.
 
 ### Step 8. Identification of Markers and Cell Clustering
