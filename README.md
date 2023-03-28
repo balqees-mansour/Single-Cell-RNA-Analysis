@@ -70,7 +70,8 @@ Cluster 5: 👍 NK  AQP1 PLVAP RAMP3 SPARCL1 IGFBP7.
 
 The interactions between different cell types within a tumor play a crucial role in determining the overall behavior and characteristics of the tumor. This can involve the transfer of signals, growth factors, and other molecules between cells, which can affect the gene expression profiles and other properties of different cell types and contribute to the development and progression of the tumor. The importance of intercellular communication in tumor phenotype highlights the complexity of the tumor microenvironment and the need for a systems-level understanding of the underlying processes that shape tumor biology.
 
-![](chat_melanoma79_files/figure-markdown_strict/unnamed-chunk-13-1.png)
+![image](https://user-images.githubusercontent.com/87857777/228236496-4f704057-2291-4b56-a02b-9c1eca2e2a9d.png)
+
 
 ### 2.interactions between CAFs and immune cell profile
 
