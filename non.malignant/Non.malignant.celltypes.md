@@ -418,3 +418,8 @@ Step 7. Finds Cell Markers :
     DimPlot(celltype.data, reduction = "tsne", label = TRUE, pt.size = 0.5) + NoLegend()
 
 ![](Non.malignant.celltypes_files/figure-markdown_strict/unnamed-chunk-18-1.png)
+
+## Reproduce the clustering part(cell types) from the paper :
+ 
+After performing clustering using PCA, t-SNE, and UMAP, you will notice the emergence of six clearly defined clusters on both UMAP and t-SNE plots. Each of these clusters corresponds to a different cell type, with each cell type exhibiting distinct genetic and expression characteristics that dictate its placement in one of the six clusters. Additionally, cells within each cluster tend to show similar RNA expression profiles due to shared genetic attributes, thus underscoring the differential behavior of the tumor microenvironment.
+
